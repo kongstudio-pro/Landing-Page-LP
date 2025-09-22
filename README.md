@@ -1,6 +1,4 @@
-# 🎨 Team Sections Workspace
-
-Project terpisah untuk tim yang hanya fokus edit **sections components**.
+# Team Sections - Landing page
 
 ## 📁 Structure
 ```
@@ -16,7 +14,7 @@ team-sections-project/
 └── package.json
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Install dependencies:**
    ```bash
@@ -33,14 +31,14 @@ team-sections-project/
    http://localhost:3000
    ```
 
-## ✏️ Cara Edit
+##  Cara Edit
 
 1. Edit file di folder `src/sections/`
 2. Save file
 3. Browser auto-reload dengan perubahan
 4. Commit & push ke GitHub
 
-## 📋 Available Sections
+## Available Sections
 
 - `Hero.js` - Landing page hero section
 - `Fiture.js` - Features showcase
@@ -51,10 +49,6 @@ team-sections-project/
 - `Footer.js` - Site footer
 - `Templateshow.js` - Template gallery
 
-## 🔄 Sync to Main Project
+## Sync to Main Project
 
-Tim tidak perlu khawatir sync - developer utama akan handle merge ke project utama.
-
-## 🎯 Focus
-
-**Hanya edit files di `src/sections/` - tidak perlu khawatir konfigurasi lain!**
+Untuk dasar landing page mengikuti acuan seperti yang ada dalam repo ini.
