@@ -9,7 +9,7 @@ const tabs = [
     title: "Animasi",
     heading: "Desain dengan Animasi",
     desc: "Hidupkan materi pembelajaranmu dengan animasi halus. Sesuaikan gaya, kecepatan, dan efek transisi dengan sekali klik — tanpa perlu pengalaman desain.",
-    img: "/images/preview-animasi.png",
+    img: "/images/fitur/animasi.png", // Asset Animasi theme
     cta: "Coba Sekarang",
   },
   {
@@ -17,7 +17,7 @@ const tabs = [
     title: "Asset Edukasi",
     heading: "Akses Ribuan Asset Gratis",
     desc: "Gunakan koleksi ikon, ilustrasi, dan elemen visual yang siap pakai untuk mempercantik materi kelas dan presentasi.",
-    img: "/images/preview-assets.png",
+    img: "/images/fitur/asset.png", // Asset Edukasi theme
     cta: "Lihat Koleksi",
   },
   {
@@ -25,7 +25,7 @@ const tabs = [
     title: "Kolaborasi",
     heading: "Kolaborasi Realtime",
     desc: "Kerjakan proyek bersama tim atau siswa secara langsung. Semua perubahan terlihat seketika dengan alur kerja modern.",
-    img: "/images/preview-collab.png",
+    img: "/images/fitur/kolaborasi.png", // Kolaborasi theme
     cta: "Mulai Kolaborasi",
   },
   {
@@ -33,7 +33,7 @@ const tabs = [
     title: "AI Assist",
     heading: "Bantuan AI Otomatis",
     desc: "Biarkan AI menyusun draft materi, teks, dan layout secara instan. Kamu cukup fokus pada ide dan pengajaran.",
-    img: "/images/preview-ai.png",
+    img: "/images/fitur/ai_assist.png", // AI Assist theme
     cta: "Gunakan AI",
   },
 ];
@@ -44,8 +44,10 @@ export default function FeatureTabs() {
   const tabData = tabs.find((t) => t.key === activeTab);
 
   return (
-    <section className="w-full bg-gradient-to-b from-slate-50 to-white py-20">
+    <section id="fitur" className="w-full bg-gradient-to-b from-slate-50 to-white py-20">
       <div className="mx-auto max-w-7xl px-6">
+        {/* Anchor for scroll offset */}
+        <div id="fitur-tabs-anchor" style={{ marginTop: '-80px', height: '80px' }}></div>
         <h2 className="mb-8 text-center text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           Fitur yang Membuat{" "}
           <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
@@ -54,7 +56,7 @@ export default function FeatureTabs() {
         </h2>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-6 overflow-x-auto border-b pb-3">
+        <div className="flex justify-center gap-6 overflow-x-auto border-b pb-3" id="fitur-tabs">
           {tabs.map((tab) => (
             <button
               key={tab.key}

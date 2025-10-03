@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  SparklesIcon,              // AI
-  ArrowDownTrayIcon,         // Export
-  UserGroupIcon,             // Kolaborasi
-  SwatchIcon,                // Brand Kit
+  SparklesIcon, // AI
+  ArrowDownTrayIcon, // Export
+  UserGroupIcon, // Kolaborasi
+  SwatchIcon, // Brand Kit
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -26,18 +26,20 @@ const Guides = () => {
           viewport={{ once: true }}
           className="grid grid-cols-2 gap-4"
         >
-          {["worksheet.png", "poster.png", "slide.png", "infografik.png"].map((img, i) => (
-            <div key={i} className="overflow-hidden rounded-xl bg-white shadow ring-1 ring-black/5">
-              <Image
-                src={`/images/templates/${img}`}
-                alt={`Template ${i + 1}`}
-                width={480}
-                height={360}
-                className="h-40 w-full object-cover"
-                priority={i < 2}
-              />
-            </div>
-          ))}
+          {["pendidikan.png", "play.png", "food.png", "poster.png"].map(
+            (img, i) => (
+              <div key={i} className="overflow-hidden rounded-t-xl rounded-b-xl">
+                <Image
+                  src={`/images/tamplate/${img}`}
+                  alt={`tamplate ${i + 1}`}
+                  width={480}
+                  height={360}
+                  className="w-full h-auto object-cover rounded-b-xl scale-100 hover:scale-105 transition-transform duration-300"
+                  priority={i < 2}
+                />
+              </div>
+            )
+          )}
         </motion.div>
 
         {/* Kanan: fitur utama */}
@@ -61,8 +63,8 @@ const Guides = () => {
           </h2>
 
           <p className="mb-8 max-w-xl text-slate-600">
-            Dari lembar kerja, presentasi, hingga poster kreatif. Semua bisa kamu
-            desain dengan mudah, cepat, dan tanpa ribet.
+            Dari lembar Pintar, presentasi, hingga poster kreatif. Semua bisa
+            kamu desain dengan mudah, cepat, dan tanpa ribet.
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

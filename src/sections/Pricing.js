@@ -40,9 +40,9 @@ const plans = (yearly) => [
     ],
   },
   {
-    name: "Edu Team",
+    name: "Premium",
     badge: "Untuk Sekolah/Tim",
-    price: yearly ? "Rp250.000" : "Rp200.000",
+    price: yearly ? "Custom" : "Rp200.000",
     suffix: yearly ? "/user/bln (tahunan)" : "/user/bln",
     cta: "Hubungi Penjualan",
     href: "/contact",
@@ -64,7 +64,7 @@ export default function Pricing() {
   const data = plans(yearly);
 
   return (
-    <section className="relative w-full py-8">
+    <section id="harga" className="relative w-full py-8">
       {/* header bg subtle */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-slate-50" />
       <div className="mx-auto max-w-7xl px-6">
