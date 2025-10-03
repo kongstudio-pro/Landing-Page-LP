@@ -9,70 +9,70 @@ const testimonials = [
         role: "Guru SMA — Jakarta",
         quote:
             "Saya bisa menyiapkan materi kelas dalam hitungan menit. Siswa jauh lebih antusias karena tampilannya modern dan interaktif.",
-        img: "/images/testi1.jpg",
+        img: "/images/gender/female.png",
     },
     {
         name: "Rian Mahendra",
         role: "Dosen — Bandung",
         quote:
             "Kolaborasi realtime dan Template AI sangat menghemat waktu. Saya bisa fokus mengajar, bukan pusing soal desain.",
-        img: "/images/testi2.jpg",
+        img: "/images/gender/male.png",
     },
     {
         name: "Sinta Wulandari",
         role: "Kreator Edukasi — Yogyakarta",
         quote:
             "Brand Kit + export PDF/PPT bikin semua konten terlihat konsisten dan profesional.",
-        img: "/images/testi3.jpg",
+        img: "/images/gender/female.png",
     },
     {
         name: "Agus Saputra",
         role: "Guru SD — Surabaya",
         quote:
             "Template lembar kerja siap pakai benar-benar membantu. Tinggal edit, cetak, selesai.",
-        img: "/images/testi4.jpg",
+        img: "/images/gender/male.png",
     },
     {
         name: "Maya Prameswari",
         role: "Wali Kelas — Depok",
         quote:
             "Integrasi dengan Google membuat alur kerja kami super mulus. Satu klik, semua tersinkron.",
-        img: "/images/testi5.jpg",
+        img: "/images/gender/female.png",
     },
     {
         name: "Fajar Nugraha",
         role: "Instruktur Bootcamp",
         quote:
             "UI sederhana, hasilnya rapi. Siswa cepat paham karena materi visualnya kuat.",
-        img: "/images/testi6.jpg",
+        img: "/images/gender/male.png",
     },
     {
         name: "Putri Oktaviani",
         role: "Kepala Lab — Malang",
         quote:
             "Scheduler posting membantu saya menjadwalkan konten untuk kelas hybrid dengan mudah.",
-        img: "/images/testi7.jpg",
+        img: "/images/gender/female.png",
     },
     {
         name: "Gilang Ramadhan",
         role: "Tutor Privat",
         quote:
             "Fitur AI Assist itu game changer—ide materi mengalir, tinggal disesuaikan kebutuhan.",
-        img: "/images/testi8.jpg",
+        img: "/images/gender/male.png",
     },
     {
         name: "Nadia Larasati",
         role: "Guru BK — Semarang",
         quote:
             "Template poster dan infografik sangat memudahkan kampanye literasi sekolah.",
-        img: "/images/testi9.jpg",
+        img: "/images/gender/female.png",
     },
     {
         name: "Reza Alfian",
         role: "Pengawas Sekolah",
         quote:
             "Tim bisa kolaborasi tanpa ribet. Revisi cepat, arsip rapi, dan tanpa watermark di Pro.",
-        img: "/images/testi10.jpg",
+        img: "/images/gender/male.png",
     },
 ];
 
@@ -120,7 +120,7 @@ export default function Testimonial() {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900">
                         Suara Pengguna{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
-                            LembarKerja
+                            LembarPintar
                         </span>
                     </h2>
                     <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base lg:text-lg text-slate-600">

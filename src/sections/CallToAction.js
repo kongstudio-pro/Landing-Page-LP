@@ -211,7 +211,7 @@ const CallToAction = () => {
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <Link
-                  href="/signup"
+                  href="/auth/login"
                   className="group relative inline-block"
                 >
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400 to-blue-500 blur opacity-75 group-hover:opacity-100 transition-opacity duration-300" />

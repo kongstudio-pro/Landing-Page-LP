@@ -1,4 +1,3 @@
-
 import {
   CallToAction,
   Templateshow,
@@ -7,19 +6,21 @@ import {
   Hero,
   Pricing,
   Testimonial,
-  Fiture
-} from '../sections/index';
+  QnA,
+  Fiture,
+} from "../sections/index";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <Fiture />
       <Templateshow />
+      <Fiture />
       <Guides />
       <Pricing />
       <Testimonial />
       <CallToAction />
+      <QnA />
       <Footer />
     </div>
   );
