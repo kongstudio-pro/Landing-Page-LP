@@ -1,54 +1,62 @@
-# Team Sections - Landing page
+# 🔧 Development Tasks & Setup Guide
 
-## 📁 Structure
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+Dokumen ini berisi daftar tugas pengembangan serta instruksi singkat untuk menjalankan proyek dan integrasi Prisma ORM dengan PostgreSQL.
+
+---
+
+## **Task 1 — Perapihan Struktur & Tampilan Landing Page**
+- Menata kembali seluruh komponen di `src/sections/`.
+- Melengkapi dengan aset ( gambar ) yang sesuai.
+- Memastikan layout pada seluruh section tampil dengan benar.
+
+---
+
+## **Task 2 — Integrasi Prisma ORM & Implementasi Login Dasar**
+- Instalasi dan konfigurasi Prisma ORM.
+- Penyambungan ke database PostgreSQL melalui `.env`.
+- Pembuatan schema dasar (`User`) untuk kebutuhan login sederhana.
+- Isi dengan menggunakan 2 user saja
+- Implementasi halaman login yang melakukan validasi dasar menggunakan Prisma Client.
+
+- **Tidak perlu membuat halaman dashbord akun cukup form login sederhana saja**
+
+---
+
+# ⚙️ Setup & Installation
+
+## **1. Install Dependencies**
+```bash
+npm install
 ```
-team-sections-project/
-├── src/
-│   ├── sections/        ← Edit files disini!
-│   │   ├── Hero.js
-│   │   ├── Pricing.js
-│   │   ├── Footer.js
-│   │   └── ...
-│   └── pages/
-│       └── index.js     ← Preview page
-└── package.json
+
+## **2. Install & Inisialisasi Prisma**
+```bash
+npm install prisma --save-dev
+npm install @prisma/client
+npx prisma init
 ```
 
-## Quick Start
+## **3. Generate & Push Schema ke Database**
+```bash
+npx prisma generate
+npx prisma db push
+```
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## **4. (Opsional) Cek Database dengan Prisma Studio**
+```bash
+npx prisma studio
+```
 
-2. **Run development server:**
-   ```bash
-   npm run dev
-   ```
+## **5. Jalankan Development Server**
+```bash
+npm run dev
+```
 
-3. **Open browser:**
-   ```
-   http://localhost:3000
-   ```
-
-##  Cara Edit
-
-1. Edit file di folder `src/sections/`
-2. Save file
-3. Browser auto-reload dengan perubahan
-4. Commit & push ke GitHub
-
-## Available Sections
-
-- `Hero.js` - Landing page hero section
-- `Fiture.js` - Features showcase
-- `Pricing.js` - Pricing plans
-- `Testimonial.js` - Customer testimonials
-- `Guides.js` - How-to guides
-- `CallToAction.js` - CTA buttons
-- `Footer.js` - Site footer
-- `Templateshow.js` - Template gallery
-
-## Sync to Main Project
-
-Untuk dasar landing page mengikuti acuan seperti yang ada dalam repo ini.
+Akses melalui browser:
+```
+http://localhost:3000
+```
