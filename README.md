@@ -1,4 +1,4 @@
-# 🔧 Development Tasks & Setup Guide
+# Development Tasks & Setup Guide
 
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
@@ -26,7 +26,7 @@ Dokumen ini berisi daftar tugas pengembangan serta instruksi singkat untuk menja
 
 ---
 
-# ⚙️ Setup & Installation
+# Setup & Installation
 
 ## **1. Install Dependencies**
 ```bash
